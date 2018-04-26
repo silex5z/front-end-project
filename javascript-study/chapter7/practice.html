@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>연습문제</title>
+</head>
+<body>
+    <img src="http://placehold.it/200x100/abc?text=img1" name="img1" />
+    <img src="http://placehold.it/200x100/cba?text=img2" name="img2" />
+    <img src="http://placehold.it/200x100/bac?text=img3" name="img3" />
+    
+    <div>
+        <button onclick="changeImg()">change image</button>
+    </div>
+
+    <script>
+        function changeImg(){
+            var imgs = document.querySelectorAll('img');
+            // var srcs;
+            // srcs = imgs[0].getAttribute('src');
+            // imgs[0].setAttribute('src',imgs[2].getAttribute('src'))
+            // imgs[2].setAttribute('src', srcs);
+            var srcs=[];
+            srcs.push(imgs[0].getAttribute('src'));
+            srcs.push(imgs[2].getAttribute('src'));
+            imgs[0].setAttribute('src',srcs[1]);
+            imgs[2].setAttribute('src',srcs[0]);
+            
+            console.log(typeof srcs);  
+        }
+    </script>
+</body>
+</html>
