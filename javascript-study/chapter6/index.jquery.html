@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chapter6</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <form name="cal">
+        <table>
+        <captipn>계산기</caption>
+            <tr>
+                <th colspan="4"><input type="text" name="result" value="0"></th>
+            </tr>
+            <tr>
+                <td><input type="button" value="7"></input></td>
+                <td><input type="button" value="8"></input></td>
+                <td><input type="button" value="9"></input></td>
+                <td><input type="button" value="+"></input></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4"></input></td>
+                <td><input type="button" value="5"></input></td>
+                <td><input type="button" value="6"></input></td>
+                <td><input type="button" value="-"></input></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1"></input></td>
+                <td><input type="button" value="2"></input></td>
+                <td><input type="button" value="3"></input></td>
+                <td><input type="button" value="*"></input></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="0"></input></td>
+                <td><input type="button" value="%"></input></td>
+                <td><input type="button" value="/"></input></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" class="cls_btn" value="clear"></input></td>
+                <td colspan="2"><input type="button" class="result_btn" value="="></input></td>
+            </tr>
+        </table>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="./js/calc-jquery.js"></script>
+    
+</body>
+</html>
