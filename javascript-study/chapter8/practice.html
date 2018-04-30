@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>나이 계산기</h1>
+    <label for="age">출생한 연도 4자리를 입력하세요</label><br>
+    <input type="text" id="age" name="age" placeholder="ex) 1983">
+    <button>확인</button>
+    
+    <script>
+    var d = new Date(),
+    year = d.getFullYear(),
+    btn = document.querySelector('button');
+      
+    btn.addEventListener('click',function(){
+        var birthYear = document.querySelector('#age').value,
+            yourAge = year - birthYear + 1;
+        alert('당신의 나이는 '+ yourAge + '세 입니다.')
+        // console.log(birthYear);
+    })
+    
+    </script>
+</body>
+</html>
+
