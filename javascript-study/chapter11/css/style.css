@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 900px;
+  margin: 0 auto;
+}
+
+header > h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+  margin-top: 20px;
+}
+
+nav > span {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+nav > span > a {
+  text-decoration: none;
+  color: #333;
+}
+
+.banner {
+  background: #69f;
+  padding: 60px 0;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.banner > h2 {
+  font-size: 3rem;
+  display: inline-block;
+}
+
+main > section > article {
+  width: 66%;
+  display: inline-block;
+}
+
+main > section > article p {
+  padding-bottom: 20px;
+}
+
+main > section > article #map {
+  width: 100%;
+  height: 500px;
+}
+
+main > section > aside {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+main > section > aside form {
+  padding: 0 20px;
+}
+
+main > section > aside form fieldset {
+  border: none;
+}
+
+main > section > aside form fieldset legend {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+main > section > aside form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+main > section > aside form input {
+  background: #bbb;
+  width: 100%;
+  height: 2rem;
+  border: none;
+  margin-bottom: 10px;
+  padding: .5rem;
+}
+
+main > section > aside form textarea {
+  background: #bbb;
+  width: 100%;
+  height: 150px;
+  padding: .5rem;
+}
+
+main > section > aside form button {
+  margin-top: 20px;
+  background: hotpink;
+  border: none;
+  padding: 15px 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/*# sourceMappingURL=style.css.map */
