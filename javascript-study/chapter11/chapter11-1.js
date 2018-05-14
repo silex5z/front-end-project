@@ -41,7 +41,7 @@ function initMap() {
 							lat: position.coords.latitude,
 							lng: position.coords.longitude
 						};
-						infoWindow.setPosition(my_position);
+						infoWindow.setPosition(pos);
             			infoWindow.setContent('여기가 내 위치입니다.');
 						map.setCenter(pos);
 					},function(){
