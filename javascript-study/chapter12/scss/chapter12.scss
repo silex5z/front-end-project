@@ -1,0 +1,84 @@
+* {
+    margin     : 0;
+    font-weight: normal;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+body {
+    color      : #333;
+    font-size  : 100%;
+    font-family: sans-serif;
+}
+
+.btn {
+    display: block;
+    margin : 0 auto;
+    padding: 10px;
+    border : 0;
+}
+
+#weather-info {
+    position       : relative;
+    width          : 100%;
+    border         : 1px solid #999;
+    box-sizing     : border-box;
+    padding        : 10px;
+    background     : url("cloud.jpg") no-repeat;
+    background-size: cover;
+    color          : white;
+
+    .load-img {
+        position: absolute;
+        left    : 50%;
+        top     : 50%;
+        display : none;
+    }
+}
+
+h1 {
+    background: #666;
+    padding   : 10px;
+    font-size : 1.8em;
+    text-align: center;
+    opacity   : 0.8;
+}
+
+section {
+    overflow   : hidden;
+    color      : #666;
+    text-shadow: 1px 1px 1px #999;
+    padding    : 10px 20px;
+
+    .w-id {
+        text-align  : left;
+        padding-left: 20px;
+    }
+
+    figure, .temp {
+        float: left;
+        width: 33.3%;
+    }
+    
+    figure > img {
+        width: 80px;
+    }
+
+    .temp {
+        font-size: 3.4em;
+    }
+}
+
+aside {
+    overflow: hidden;
+
+    p {
+        font-size : 1.8em;
+        text-align: right;
+    }
+}
+
+
+
