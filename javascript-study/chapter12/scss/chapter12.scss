@@ -34,6 +34,7 @@ body {
         position: absolute;
         left    : 50%;
         top     : 50%;
+        width   : 50px;
         display : none;
     }
 }
@@ -68,6 +69,10 @@ section {
 
     .temp {
         font-size: 3.4em;
+    }
+
+    [class^='temp'] {
+        min-width: 111px;
     }
 }
 

@@ -3,10 +3,16 @@ var url = 'http://api.openweathermap.org/data/2.5/weather?q=seoul,kr&APPID=ff09a
 
 // 로딩 이미지 표시
 $('#weather-info .load-img').show();
-initWidget(url);
+
+$(document).ready(function(){
+    $('.btn').on('click', function(){
+        getGeolocation();
+    })
+    initWidget(url);
+});
 
 function initWidget(url){
-    console.log(url);
+    // console.log(url);
     $.getJSON(url, function(data){
         // 날씨 data 객체
         var sys     = data.sys;
